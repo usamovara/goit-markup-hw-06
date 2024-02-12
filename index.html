@@ -94,8 +94,7 @@
             </li>
             <li class="feature-item">
               <div class="feature-main-img">
-                <svg width="64" height="64" viewBox="0 0 32 32" class="svg_icon_feature"
-                >
+                <svg width="64" height="64" viewBox="0 0 32 32" class="svg_icon_feature" >
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
@@ -107,8 +106,7 @@
             </li>
             <li class="feature-item">
               <div class="feature-main-img">
-                <svg width="64" height="64" viewBox="0 0 32" class="svg_icon_feature"
-                >
+                <svg width="64" height="64" viewBox="0 0 32 32" class="svg_icon_feature" >
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
@@ -127,7 +125,12 @@
           <h2 class="people-title visibility-hidden">Our Team</h2>
           <ul class="people-list">
             <li class="people-item">
-              <img class="people-img" src="./images/img1.jpg" alt="Product Designer" width="264" height="260" />
+              <picture> <!--  Product designer -->
+                <source media="(min-width: 1158px)" srcset="./images/dsk-img1.jpg 1x, ./images/dsk-img1@2x.jpg 2x">
+                <source media="(min-width: 768px)"  srcset="./images/tab-img1.jpg 1x, ./images/tab-img1@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/mob-img1.jpg 1x, ./images/mob-img1@2x.jpg 2x">
+                <img class="people-img" src="./images/img1.jpg" alt="Product Designer" width="264" height="260" />
+              </picture>
               <div class="people-card">
                 <h3 class="people-subtitle">Mark Guerrero</h3>
                 <p class="people-text">Product Designer</p>
@@ -164,7 +167,12 @@
               </div>
             </li>
             <li class="people-item">
-              <img class="people-img" src="./images/img2.jpg" alt="Frontend Dveloper" width="264" height="260" />
+              <picture> <!--  Fronteand developer -->
+                <source media="(min-width: 1158px)" srcset="./images/dsk-img2.jpg 1x, ./images/dsk-img2@2x.jpg 2x">
+                <source media="(min-width: 768px)"  srcset="./images/tab-img2.jpg 1x, ./images/tab-img2@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/mob-img2.jpg 1x, ./images/mob-img2@2x.jpg 2x">
+                <img class="people-img" src="./images/img2.jpg" alt="Frontend Dveloper" width="264" height="260" />
+              </picture>
               <div class="people-card">
                 <h3 class="people-subtitle">Tom Ford</h3>
                 <p class="people-text">Frontend Developer</p>
@@ -200,7 +208,13 @@
               </div>
             </li>
             <li class="people-item">
-              <img class="people-img" src="./images/img3.jpg" alt="Marketing" width="264" height="260"/>
+              <picture> <!--  Marketing -->
+                <source media="(min-width: 1158px)" srcset="./images/dsk-img3.jpg 1x, ./images/dsk-img3@2x.jpg 2x">
+                <source media="(min-width: 768px)"  srcset="./images/tab-img3.jpg 1x, ./images/tab-img3@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/mob-img3.jpg 1x, ./images/mob-img3@2x.jpg 2x">
+                <img class="people-img" src="./images/img3.jpg" alt="Marketing" width="264" height="260"/>
+              </picture>
+
               <div class="people-card">
                 <h3 class="people-subtitle">Camila Garcia</h3>
                 <p class="people-text">Marketing</p>
@@ -234,7 +248,12 @@
               </div>
             </li>
             <li class="people-item">
-              <img class="people-img" src="./images/img4.jpg" alt="UI Designer" width="264" height="260"/>
+              <picture> <!--  UI -->
+                <source media="(min-width: 1158px)" srcset="./images/dsk-img4.jpg 1x, ./images/dsk-img4@2x.jpg 2x">
+                <source media="(min-width: 768px)"  srcset="./images/tab-img4.jpg 1x, ./images/tab-img4@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/mob-img4.jpg 1x, ./images/mob-img4@2x.jpg 2x">
+                <img class="people-img" src="./images/img4.jpg" alt="UI Designer" width="264" height="260"/>
+              </picture>
               <div class="people-card">
                 <h3 class="people-subtitle">Daniel Wilson</h3>
                 <p class="people-text">UI Designer</p>
@@ -298,7 +317,7 @@
             <li class="portfolio-item">
               <div class="overlay-hidden">
                 <picture>
-                  <source media="(min-width: 1158px)" srcset="./images/dsk-casheless.jpg 1x, ./images/dsk-cashless@2x.jpg 2x">
+                  <source media="(min-width: 1158px)" srcset="./images/dsk-cashless.jpg 1x, ./images/dsk-cashless@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./images/tab-cashless.jpg 1x, ./images/tab-cashless@2x.jpg 2x">
                   <source media="(max-width: 767px)" srcset="./images/mob-cashless.jpg 1x, ./images/mob-cashless@2x.jpg 2x">
                    <img class="portfolio-img" src="./images/mobile/mob-cashless.jpg" alt="Cashless Payment" width="360"/>
@@ -522,7 +541,7 @@
     <div class="mobile-menu">
       <button class="menu-mobile" type="button">
         <svg class="svg-mob" width="8" height="8">
-          <use href="./images/icons.svg#icon-close2"></use>
+          <use href="./images/icons.svg#mobile-menu-close"></use>
         </svg>
       </button>
       <ul class="mobile-menu-list">
@@ -549,33 +568,30 @@
           >
         </li>
       </ul>
-      <ul class="mobile-menu-socials socials">
-        <li class="socials-items-mob">
-          <a href="" class="socials-links-mob">
-            <svg class="socials-icons" width="24" height="24">
-              <use href="./images/icons.svg#icon-instagram"></use>
+      <ul class="mob-social-list">
+        <li class="mob-social-item">
+          <a href="https://www.instagram.com/" target="_blank" class="mob-social-link">
+            <svg width="24" height="24" class="mob-social-svg" viewBox="0 0 16 16">
+              <use href="./images/icons.svg#instagram"></use>
             </svg>
           </a>
         </li>
-        <li class="socials-items-mob">
-          <a href="" class="socials-links-mob">
-            <svg class="socials-icons" width="24" height="24">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
+        <li class="mob-social-item">
+          <a href="https://www.x.com/" target="_blank" class="mob-social-link" >
+            <svg width="24" height="24" class="mob-social-svg" viewBox="0 0 16 16">
+              <use href="./images/icons.svg#twitter"></use></svg>
           </a>
         </li>
-        <li class="socials-items-mob">
-          <a href="" class="socials-links-mob">
-            <svg class="socials-icons" width="24" height="24">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
+        <li class="mob-social-item">
+          <a href="https://www.facebook.com/" target="_blank" class="mob-social-link">
+            <svg width="24" height="24" class="mob-social-svg" viewBox="0 0 16 16">
+              <use href="./images/icons.svg#facebook"></use></svg>
           </a>
         </li>
-        <li class="socials-items-mob">
-          <a href="" class="socials-links-mob">
-            <svg class="socials-icons" width="24" height="24">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
+        <li class="mob-social-item">
+          <a href="https://www.instagram.com/" target="_blank" class="mob-social-link" >
+            <svg width="24" height="24" viewBox="0 0 16 16" class="mob-social-svg" >
+              <use href="./images/icons.svg#linkedin"></use></svg>
           </a>
         </li>
       </ul>
